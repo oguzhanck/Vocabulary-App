@@ -26,11 +26,9 @@ class MainActivity : AppCompatActivity() {
         if (firstStart)
             showStartDialog(wordViewModel)
 
-        // Transition to Activities
+        // Transition between Activities
         transition()
-        val check = wordViewModel.checkEmptyList()
-        if (check != 0)
-            getWordFromList()
+
     }
 
     private fun showStartDialog(viewModel: WordViewModel) {
@@ -70,6 +68,14 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+    }
+
+    override fun onStop() {
+        super.onStop()
+
+        val check = wordViewModel.checkEmptyList()
+        if (check != 0)
+            getWordFromList()
     }
 
     private fun getWordFromList() {

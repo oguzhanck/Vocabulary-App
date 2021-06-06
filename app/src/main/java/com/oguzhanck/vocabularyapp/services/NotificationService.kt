@@ -49,7 +49,7 @@ class NotificationService : Service() {
     private fun startTimer(word: String) {
         timer = Timer()
         initializeTimerTask(word)
-        timer!!.schedule(timerTask, 5000, 43200000) //
+        timer!!.schedule(timerTask, 500000, 43200000) //
 
     }
 
