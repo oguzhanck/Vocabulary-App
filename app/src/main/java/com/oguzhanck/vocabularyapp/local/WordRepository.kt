@@ -17,7 +17,7 @@ class WordRepository(private val wordDao: WordDao) {
         wordDao.delete(wordEntity)
     }
 
-    // LIST
+    // LIST //
     fun insertWordDetailList(listEntity: ListEntity) {
         wordDao.insertList(listEntity)
     }
