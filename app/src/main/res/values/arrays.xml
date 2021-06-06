@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>Choose One Of Category:</item>
+        <item>VERBS</item>
+        <item>ADVERBS</item>
+        <item>ADJECTIVES</item>
+        <item>PHRASES AND IDIOMS</item>
+    </string-array>
+</resources>
